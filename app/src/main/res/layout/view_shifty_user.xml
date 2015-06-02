@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
-        <variable name="user" type="com.example.bparks1271databinding.databindingexample.ShiftyUser"/>
+        <variable name="usertwo" type="com.example.bparks1271databinding.databindingexample.ShiftyUser"/>
     </data>
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft="@{user.paddingLeft}">
+        android:layout_height="match_parent">
         <TextView android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text='@{user.firstName + "\nHello from XML"}'/>
+            android:text='@{usertwo.firstName + "\nHello from XML"}'/>
         <ViewStub
             android:layout_width="10dp"
             android:layout_height="10dp" />
         <TextView android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{user.lastName + `\nGoodbye from XML`}"/>
+            android:text="@{usertwo.lastName + `\nGoodbye from XML`}"/>
 
     </LinearLayout>
 </layout>
-
